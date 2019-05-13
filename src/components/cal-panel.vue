@@ -112,7 +112,7 @@ export default {
       return dateTimeFormatter(tempDate, this.i18n[this.calendar.options.locale].format)
     },
     customColor () {
-      return this.calendar.options.color
+      return '#409EFF';
     }
   },
   methods: {

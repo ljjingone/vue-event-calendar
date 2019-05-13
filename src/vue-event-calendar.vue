@@ -141,7 +141,7 @@ export default {
 }
 </script>
 <style lang="less">
-@base-orange: #f29543;
+@base-orange: #409EFF;
 @white: #ffffff;
 @gray: #e0e0e0;
 @gray-dark: #b1b1b1;
