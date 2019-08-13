@@ -283,14 +283,14 @@ export default {
             border: 1px solid @base-orange;
             background-color: #fff;
             border-radius: 50%;
-            width: 36px;
-            height: 36px;
+            width: 30px;
+            height: 30px;
             position: absolute;
             left: 50%;
             top: 50%;
             z-index: 1;
-            margin-left: -18px;
-            margin-top: -19px;
+            margin-left: -15px;
+            margin-top: -16px;
           }
           .is-today{
             content: '';

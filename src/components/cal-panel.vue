@@ -26,7 +26,8 @@
           >
           <p class="date-num"
             @click="handleChangeCurday(date)"
-            :style="{color: date.title != undefined ? ((date.date == selectedDay) ? '#fff' : customColor) : 'inherit'}">
+            :class="{'addClass':date.date == selectDay}"
+            :style="{color: date.title != undefined ? ((date.date == selectedDay) ? '#fff' : customColor) : ''}">
             {{date.status ? date.date.split('/')[2] : '&nbsp;'}}</p>
           <span v-if="date.status ? (today == date.date) : false" class="is-today" :style="{backgroundColor: customColor }" ></span>
           <span v-if="date.status ? (date.title != undefined) : false" class="is-event"
@@ -46,7 +47,9 @@ export default {
   name: 'cal-panel',
   data () {
     return {
-      i18n
+      i18n,
+      selectDay:'',
+      addClass:'add'
     }
   },
   props: {
@@ -101,6 +104,7 @@ export default {
           })
           tempArr.push(tempItem)
       }
+      console.log(tempArr)
       return tempArr
     },
     today () {
@@ -125,6 +129,8 @@ export default {
       this.$emit('month-changed', this.curYearMonth)
     },
     handleChangeCurday (date) {
+      this.selectDay=date.date;
+      console.log(this.selectDay)
       if (date.status) {
         this.$emit('cur-day-changed', date.date)
       }
@@ -132,3 +138,8 @@ export default {
   }
 }
 </script>
+<style >
+.cal-wrapper .addClass{
+  color: #409EFF;
+}
+</style>
