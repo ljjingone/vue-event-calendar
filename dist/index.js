@@ -644,7 +644,6 @@ var inBrowser = typeof window !== 'undefined';
         });
         tempArr.push(tempItem);
       }
-      console.log(tempArr);
       return tempArr;
     },
     today: function today() {
