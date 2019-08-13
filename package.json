@@ -1,6 +1,6 @@
 {
   "name": "vue-event-calendar",
-  "description": "A simple calendar to mark events for Vue2",
+  "description": "A simple calendar to mark events for Vue2 ",
   "version": "1.5.2",
   "author": "geoffzhu <geoffzhu1992@gmail.com>",
   "scripts": {
