@@ -1,5 +1,5 @@
 {
-  "name": "vue-event-calendar",
+  "name": "vue-event-calendar-v2",
   "description": "A simple calendar to mark events for Vue2",
   "version": "1.5.2",
   "author": "geoffzhu <geoffzhu1992@gmail.com>",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GeoffZhu/vue-event-calendar"
+    "url": "git+https://github.com/ljjingone/vue-event-calendar"
   },
   "main": "dist/index.js",
   "dependencies": {
@@ -37,7 +37,7 @@
     "vue-event-calendar"
   ],
   "bugs": {
-    "url": "https://github.com/GeoffZhu/vue-event-calendar/issues"
+    "url": ""
   },
-  "homepage": "http://geoffzhu.cn/vue-event-calendar/"
+  "homepage": ""
 }

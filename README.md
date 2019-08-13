@@ -1,13 +1,13 @@
-# vue-event-calendar
+# vue-event-calendar-v2
 
 > A simple events calendar for Vue2, no dependencies except Vue2. responsive & mobile first.
-> [Live Demo Here](http://geoffzhu.cn/vue-event-calendar/)
+> [Live Demo Here](http://geoffzhu.cn/vue-event-calendar-v2/)
 
-![](http://o80ronwlu.bkt.clouddn.com/vue-event-calendar.gif)
+![](http://o80ronwlu.bkt.clouddn.com/vue-event-calendar-v2.gif)
 
-[![npm version](https://img.shields.io/npm/v/vue-event-calendar.svg)](https://www.npmjs.com/package/vue-event-calendar)
+[![npm version](https://img.shields.io/npm/v/vue-event-calendar-v2.svg)](https://www.npmjs.com/package/vue-event-calendar-v2)
 
-[中文文档](https://github.com/GeoffZhu/vue-event-calendar/blob/master/README.zh.md)
+[中文文档](https://github.com/GeoffZhu/vue-event-calendar-v2/blob/master/README.zh.md)
 
 ## Requirements
 - vue: ^2.0.0
@@ -16,14 +16,14 @@
 #### install
 
 ``` sh
- npm install vue-event-calendar --save
+ npm install vue-event-calendar-v2 --save
 ```
 
 #### main.js
 
 ```javascript
-import 'vue-event-calendar/dist/style.css' //^1.1.10, CSS has been extracted as one file, so you can easily update it.
-import vueEventCalendar from 'vue-event-calendar'
+import 'vue-event-calendar-v2/dist/style.css' //^1.1.10, CSS has been extracted as one file, so you can easily update it.
+import vueEventCalendar from 'vue-event-calendar-v2'
 // locale can be 'zh' , 'en' , 'es', 'pt-br', 'ja', 'ko', 'fr', 'it', 'ru', 'de', 'vi', 'ua', 'no, 'no-nn'
 Vue.use(vueEventCalendar, {locale: 'en'}) 
 ```
@@ -32,7 +32,7 @@ Vue.use(vueEventCalendar, {locale: 'en'})
 
 ```vue
 <template>
-  <vue-event-calendar :events="demoEvents"></vue-event-calendar>
+  <vue-event-calendar-v2 :events="demoEvents"></vue-event-calendar-v2>
 </template>
 
 <script>
@@ -58,7 +58,7 @@ export default {
 
 ```vue
 <template>
-  <vue-event-calendar :title="title" :events="demoEvents" @dayChanged="handleDayChange"></vue-event-calendar>
+  <vue-event-calendar-v2 :title="title" :events="demoEvents" @dayChanged="handleDayChange"></vue-event-calendar-v2>
 </template>
 ```
 
@@ -70,14 +70,14 @@ If you want customization event template. required Vue: ^2.1.0. Because I use ne
 
 ```vue
 <template>
-  <vue-event-calendar :events="demoEvents">
+  <vue-event-calendar-v2 :events="demoEvents">
       <template scope="props">
         <div v-for="(event, index) in props.showEvents" class="event-item">
           <!-- In here do whatever you want, make you owner event template -->
           {{event}}
         </div>
       </template>
-    </vue-event-calendar>
+    </vue-event-calendar-v2>
 </template>
 
 <script>
@@ -103,11 +103,11 @@ Can handle two Events, @day-changed and @month-changed, callback params like ```
 
 ```javascript
 <template>
-  <vue-event-calendar
+  <vue-event-calendar-v2
     :events="demoEvents"
     @day-changed="handleDayChanged"
     @month-changed="handleMonthChanged">
-  </vue-event-calendar>
+  </vue-event-calendar-v2>
 </template>
 ```
 
@@ -136,7 +136,7 @@ this.$EventCalendar.preMonth()
 //ToDate
 this.$EventCalendar.toDate('2016/11/12')
 ```
-More in [Demo Folder](https://github.com/GeoffZhu/vue-event-calendar/tree/master/demo)
+More in [Demo Folder](https://github.com/GeoffZhu/vue-event-calendar-v2/tree/master/demo)
 
 ## Develop
 ```
