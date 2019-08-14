@@ -150,15 +150,33 @@ export default {
 
 @icon-border-size: 1px;
 .cal-wrapper{
+  .center{
+    text-align: center;
+  }
   .is-today{
     display: inline-block;
     background: rgba(64,158,255,0.2);
     width: 30px;
     height: 30px;
-    line-height: 31px;
+    line-height: 30px;
     border-radius: 50%;
     color: @base-orange;
     font-weight: 600;
+    position: relative;
+    left: 1px;
+    top: -1px;
+    .center;
+  }
+  .item_list{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    position: relative;
+    left: 1px;
+    top: -1px;
+    .center;
   }
   .addClass{
     color: #409EFF;
@@ -167,9 +185,13 @@ export default {
       background: @base-orange;
       width: 30px;
       height: 30px;
-      line-height: 31px;
+      line-height: 30px;
       border-radius: 50%;
       color: @white;
+      position: relative;
+      left: 1px;
+      top: -1px;
+      .center;
     }
     
   }

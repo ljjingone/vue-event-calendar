@@ -30,7 +30,7 @@
               <span v-if="date.status ? (today == date.date) : false" class="is-today"  >
                 {{date.status ? date.date.split('/')[2] : '&nbsp;'}}
               </span>
-              <span v-else>
+              <span v-else class="item_list">
                 {{date.status ? date.date.split('/')[2] : '&nbsp;'}}
               </span>
             </p>

@@ -1120,7 +1120,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     }, [(date.status ? (_vm.today == date.date) : false) ? _c('span', {
       staticClass: "is-today"
-    }, [_vm._v("\n              " + _vm._s(date.status ? date.date.split('/')[2] : ' ') + "\n            ")]) : _c('span', [_vm._v("\n              " + _vm._s(date.status ? date.date.split('/')[2] : ' ') + "\n            ")])]), _vm._v(" "), (date.status ? (date.title != undefined) : false) ? _c('span', {
+    }, [_vm._v("\n              " + _vm._s(date.status ? date.date.split('/')[2] : ' ') + "\n            ")]) : _c('span', {
+      staticClass: "item_list"
+    }, [_vm._v("\n              " + _vm._s(date.status ? date.date.split('/')[2] : ' ') + "\n            ")])]), _vm._v(" "), (date.status ? (date.title != undefined) : false) ? _c('span', {
       staticClass: "is-event"
     }) : _vm._e()])
     var _obj;
