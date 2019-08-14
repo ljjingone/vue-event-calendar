@@ -149,6 +149,31 @@ export default {
 @small-padding: 10px;
 
 @icon-border-size: 1px;
+.cal-wrapper{
+  .is-today{
+    display: inline-block;
+    background: rgba(64,158,255,0.2);
+    width: 29px;
+    height: 29px;
+    line-height: 31px;
+    border-radius: 50%;
+    color: @base-orange;
+    font-weight: 600;
+  }
+  .addClass{
+    color: #409EFF;
+    span,.is-today{
+      display: inline-block;
+      background: @base-orange;
+      width: 29px;
+      height: 29px;
+      line-height: 31px;
+      border-radius: 50%;
+      color: @white;
+    }
+    
+  }
+} 
 @media screen and (min-width: 768px) {
   .__vev_calendar-wrapper{
     max-width: 1200px;
@@ -275,7 +300,7 @@ export default {
           }
           &.selected-day{
             .is-event{
-              background-color: @base-orange;
+              // background-color: @base-orange;
             }
           }
           .is-event{
@@ -292,20 +317,7 @@ export default {
             margin-left: -14px;
             margin-top: -16px;
           }
-          .is-today{
-            content: '';
-            background-color: @base-orange;
-            border-radius: 50%;
-            opacity: .8;
-            width: 12px;
-            height: 4px;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            z-index: 2;
-            margin-left: -6px;
-            margin-top: 8px;
-          }
+          
         }
       }
     }
