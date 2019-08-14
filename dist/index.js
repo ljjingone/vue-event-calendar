@@ -674,7 +674,7 @@ var inBrowser = typeof window !== 'undefined';
     },
     handleChangeCurday: function handleChangeCurday(date) {
       this.selectDay = date.date;
-      console.log(this.selectDay);
+      // console.log(this.selectDay)
       if (date.status) {
         this.$emit('cur-day-changed', date.date);
       }
