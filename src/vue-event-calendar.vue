@@ -289,7 +289,7 @@ export default {
             left: 50%;
             top: 50%;
             z-index: 1;
-            margin-left: -15px;
+            margin-left: -14px;
             margin-top: -16px;
           }
           .is-today{
