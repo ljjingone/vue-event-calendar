@@ -153,8 +153,8 @@ export default {
   .is-today{
     display: inline-block;
     background: rgba(64,158,255,0.2);
-    width: 29px;
-    height: 29px;
+    width: 30px;
+    height: 30px;
     line-height: 31px;
     border-radius: 50%;
     color: @base-orange;
@@ -165,8 +165,8 @@ export default {
     span,.is-today{
       display: inline-block;
       background: @base-orange;
-      width: 29px;
-      height: 29px;
+      width: 30px;
+      height: 30px;
       line-height: 31px;
       border-radius: 50%;
       color: @white;
