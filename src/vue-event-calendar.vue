@@ -180,7 +180,7 @@ export default {
   }
   .addClass{
     color: #409EFF;
-    span,.is-today{
+    .have,.is-today{
       display: inline-block;
       background: @base-orange;
       width: 30px;

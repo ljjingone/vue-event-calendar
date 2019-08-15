@@ -27,10 +27,10 @@
           <p class="date-num"
             @click="handleChangeCurday(date)"
             :class="{'addClass':date.date == selectDay}">
-              <span v-if="date.status ? (today == date.date) : false" class="is-today"  >
+              <span v-if="date.status ? (today == date.date) : false" class="is-today"  :class="{have:date.status}">
                 {{date.status ? date.date.split('/')[2] : '&nbsp;'}}
               </span>
-              <span v-else class="item_list">
+              <span v-else class="item_list" :class="{have:date.status}">
                 {{date.status ? date.date.split('/')[2] : '&nbsp;'}}
               </span>
             </p>
